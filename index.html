@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature convertor app</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-fluid background">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center ">
+                <div class="conatiner">
+                    <div class="row d-flex justify-content-center ">
+                        <div class="col-sm-12 col-md-10 col-lg-8 margintop">
+                            <div class="box bg-white w-100 ">
+                                <div class="inputfield pt-2">
+                                    <h2>Enter Temperature which you want to convert:</h2>
+                                    <input type="text" placeholder="Enter temperature to change" id="screen" class="bordergrey w-50 p-2 text-center colored" />
+                                </div>
+                                <div class="selectunit mt-4 mx-3">
+                                    <h2>Select unit of your temperature:</h2>
+                                    <select name="tempGive" id="tempGive" class="bordergrey w-50 p-2 text-center">
+                                        <option value="celcius">Celsius</option>
+                                        <option value="fahrenheit">Fahrenheit</option>
+                                        <option value="kelvin">Kelvin</option>
+                                    </select>
+                                </div>
+                                <div class="convertedunit mt-4 mx-3">
+                                    <h2>Select coversion unit of your temperature:</h2>
+                                    <select name="tempConvert" id="tempConvert" class="bordergrey w-50 p-2 text-center">
+                                        <option value="celcius">Celsius</option>
+                                        <option value="fahrenheit">Fahrenheit</option>
+                                        <option value="kelvin">Kelvin</option>
+                                    </select>
+                                </div>
+                                <div class="button mt-4 mx-3">
+                                    <button onclick="conversion()" class="py-2 px-5 btn" id="convert">Convert</button>
+                                </div>
+                                <div class="resultfield mt-4 mx-3">
+                                    <h2>The Result is:</h2>
+                                    <input type="text" placeholder="Result" id="result" class="bordergrey w-50 p-2 text-center colored"/>
+                                </div>
+            
+                        </div>
+                    </div>
+                </div>
+             
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
